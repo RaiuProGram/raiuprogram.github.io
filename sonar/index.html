@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sõnar</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="Rasmus Luure in Piuksu">
+        <link rel="stylesheet" href="css/raicss-tbcsr-min.css">
+    </head>
+    <body>
+        <div rt0 style="text-align: center;">Sõnar</div>
+        <div rt1 id="title"></div>
+        <input rf id="input" type="text" autocomplete="off"/>
+        <div rb onclick="kontroll()">SISESTA</div>
+        <input rf id="lae" style="min-width: 15%; width: 15%" type="text"/>
+        <div rb onclick="load(document.getElementById('lae').value);">LAE</div>
+        <div rb onclick="navigator.clipboard.writeText(JSON.stringify(save_obj));">KOPEERI</div>
+        <div rb onclick="piir = prompt('Sisesta piir');">PIIR</div>
+        <script src="script.js"></script>
+    </body>
+</html>

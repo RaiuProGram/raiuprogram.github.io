@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap'); /*deafult font*/
+
+:root {
+    --bg0: #000000; /*main background*/
+    --bg1: #111111; /*1. background*/
+    --bg2: #333333; /*2. background*/
+
+    --bx0: #555555; /*main box*/
+    --bx1: #333333; /*1. box*/
+    --bx2: #888888; /*2. box*/
+
+    --tb0: #ffff00; /*main text/border*/
+    --tb1: #ff8800; /*1. text/border*/
+    --tb2: #ff5500; /*2. text/border*/
+    --tb3: #ff0000; /*3. text/border*/
+    --tb4: #ffffff; /*4. text/border*/
+    --tb5: #bbbbbb; /*5. text/border*/
+
+    --font: Ubuntu;
+
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    float: left;
+    background-color: var(--bg0);
+    width: 100%;
+}
+div[rt0] {
+    display: block;
+    float: left;
+    width: calc(100% - 20px);
+    margin: 10px 0px 10px 10px;
+    font-size: 45px;
+    text-decoration: underline;
+    font-family: var(--font);
+    color: var(--tb0);
+}
+div[rt1] {
+    display: block;
+    float: left;
+    width: 100%;
+    width: calc(100% - 25px);
+    font-size: 35px;
+    font-family: var(--font);
+    color: var(--tb0);
+    margin: 10px 0px 10px 20px;
+}
+div[rtx] {
+    display: block;
+    float: left;
+    width: calc(100% - 30px);
+    margin: 10px 0px 10px 20px;
+    font-size: 20px;
+    font-family: var(--font);
+    color: var(--tb0);
+}
+div[rb] {
+    display: block;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    margin: 10px 0px 10px 20px;
+    padding: 0px 10px 0px 10px;
+    background-color: var(--bx1);
+    color: var(--tb0);
+    font-family: var(--font);
+    border: 2px solid var(--tb0);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 300ms;
+}
+div[rb]:hover {
+    background-color: var(--tb1);
+}
+input[rf] {
+    display: block;
+    float: left;
+    min-height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    margin: 10px 0px 10px 20px;
+    padding: 0px 10px 0px 10px;
+    background-color: var(--bx1);
+    color: var(--tb0);
+    font-family: var(--font);
+    border: 2px solid var(--tb0);
+    border-radius: 10px;
+    transition: background 300ms;
+    min-width: 50%;
+    outline: none;
+}
