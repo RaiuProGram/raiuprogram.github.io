@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CPS (Clicks Per Second) TESTS - CluTools</title>
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <link rel="icon" type="image/png" href="logo.svg">
+        
+    </head>
+    <body>
+        <div id="title-bar">
+            <div id="title">CPS (Clicks Per Second) TESTS</div>
+            <img src="logo.png" alt="PiiiTools" id="logo-button" class="nav-button">
+            <img src="menu.png" alt="menu" id="menu-button" class="nav-button">
+        </div>
+        <div id="mode-switcher">
+            <div onclick="mode_switch(0);" id="msb0" class="ms-button ms-button-selected">JUST SHOW CPS</div>
+            <div onclick="mode_switch(1);" id="msb1" class="ms-button">5 SECOND SPEED TEST</div>
+            <div onclick="mode_switch(2);" id="msb2" class="ms-button">1 MINUTE SPEED TEST</div>
+            <div onclick="mode_switch(3);" id="msb3" class="ms-button">CUSTOM</div>
+        </div>
+        <div id="text1">0 cps</div>
+        <div id="text2">0 clicks</div>
+        <div id="text3"></div>
+        <div id="click-counter"></div>
+        <div id="result-back" class="popup-back" onclick="popup(false, 'result')"></div>
+        <div id="result" class="popup">
+            <div id="result-title" class="popup-title">error CPS</div>
+            <div id="result-alt" class="popup-alt">GOOD SPEED</div>
+            <div id="result-clicks" class="popup-clicks">error CLICKS</div>
+            <div class="popup-close" onclick="popup(false, 'result')">CLOSE</div>
+        </div>
+        <div id="custom-back" class="popup-back" onclick="popup(false, 'custom')"></div>
+        <div id="custom" class="popup">
+            <div class="popup-title">COMING SOON</div>
+            <div class="popup-alt">The "CUSTOM" tab is coming soon!</div>
+            <div class="popup-clicks"></div>
+            <div class="popup-close" onclick="popup(false, 'custom'); ">CLOSE</div>
+        </div>
+        
+
+        <div id="click-protector"></div>
+        <script src="js.js"></script>
+    </body>
+</html>
